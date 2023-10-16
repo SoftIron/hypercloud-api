@@ -167,6 +167,7 @@ type OS struct {
 // UserTemplate is the API payload based on the legacy xmlrpc backend.
 type UserTemplate struct {
 	Values                map[string]string `json:"values,omitempty" yaml:"values,omitempty"`
+	Description           string            `json:"description,omitempty" yaml:"description,omitempty"`
 	EFI                   string            `json:"efi,omitempty" yaml:"efi,omitempty"`
 	VCenterCCRRef         string            `json:"vcenter_ccrref,omitempty" yaml:"vcenter_ccrref,omitempty"`
 	VCenterDSRef          string            `json:"vcenter_dsref,omitempty" yaml:"vcenter_dsref,omitempty"`
@@ -177,6 +178,7 @@ type UserTemplate struct {
 	Logo                  string            `json:"logo,omitempty" yaml:"logo,omitempty"`
 	LXDSecurityPrivileged bool              `json:"lxdsecurity_privileged,omitempty" yaml:"lxdsecurity_privileged,omitempty"`
 	SchedRequirements     string            `json:"sched_requirements,omitempty" yaml:"sched_requirements,omitempty"`
+	SchedDSRequirements   string            `json:"sched_ds_requirements,omitempty" yaml:"sched_ds_requirements,omitempty"`
 	SnapshotSchedule      string            `json:"snapshot_schedule,omitempty" yaml:"snapshot_schedule,omitempty"`
 }
 
